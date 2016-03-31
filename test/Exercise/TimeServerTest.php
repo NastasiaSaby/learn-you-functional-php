@@ -112,6 +112,7 @@ class TimeServerTest extends PHPUnit_Framework_TestCase
             __DIR__ . '/../res/time-server/solution.php'
         );
 
+        var_dump($results);
         $this->assertCount(2, $results);
         $success = iterator_to_array($results)[0];
         $this->assertInstanceOf(Success::class, $success);
