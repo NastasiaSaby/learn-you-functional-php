@@ -36,16 +36,7 @@ use PhpSchool\LearnYouPhp\Exercise\DependencyHeaven;
 $app = new Application(null, __DIR__ . '/config.php');
 
 $app->addExercise(HelloWorld::class);
-$app->addExercise(BabySteps::class);
-$app->addExercise(MyFirstIo::class);
-$app->addExercise(FilteredLs::class);
-$app->addExercise(ConcernedAboutSeparation::class);
-$app->addExercise(ArrayWeGo::class);
-$app->addExercise(ExceptionalCoding::class);
-$app->addExercise(DatabaseRead::class);
-$app->addExercise(TimeServer::class);
-$app->addExercise(HttpJsonApi::class);
-$app->addExercise(DependencyHeaven::class);
+$app->addExercise(\PhpSchool\LearnYouPhp\Exercise\CallbackHeaven::class);
 
 $art = <<<ART
         _ __ _
@@ -55,10 +46,11 @@ $art = <<<ART
 
       PHP SCHOOL
 LEARNING FOR ELEPHANTS
+  FUNCTIONS AND ARRAY
 ART;
 
 $app->setLogo($art);
-$app->setFgColour('magenta');
+$app->setFgColour('blue');
 $app->setBgColour('black');
 
 return $app;

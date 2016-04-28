@@ -1,28 +1,16 @@
-Write a program that prints the text "Hello World" to the console (stdout).
+Write a program that prints the text "Hello World" to the console with a callable function.
 
 ----------------------------------------------------------------------
 ## HINTS
 
-To make a PHP program, create a new file with a `.php` extension and start writing PHP! Execute your program by running it with the
-`php` command. e.g.:
-
-```sh
-$ php program.php
-```
-
-You can write to the console like so:
+A callable function in PHP can be used as that :
 
 ```php
-<?php
-echo "text";
+$var = function() {
+   echo "First test !";
+};
+
+$var();
 ```
-
-When you are done, you must run:
-
-```sh
-$ {appname} verify program.php
-```
-
-to proceed. Your program will be tested, a report will be generated, and the lesson will be marked 'completed' if you are successful.
 
 ----------------------------------------------------------------------
