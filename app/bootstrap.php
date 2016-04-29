@@ -36,7 +36,7 @@ use PhpSchool\LearnYouPhp\Exercise\DependencyHeaven;
 $app = new Application(null, __DIR__ . '/config.php');
 
 $app->addExercise(HelloWorld::class);
-$app->addExercise(\PhpSchool\LearnYouPhp\Exercise\CallbackHeaven::class);
+$app->addExercise(\PhpSchool\LearnYouPhp\Exercise\HelloSomeone::class);
 
 $art = <<<ART
         _ __ _

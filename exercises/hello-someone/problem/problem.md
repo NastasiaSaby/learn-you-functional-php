@@ -1,5 +1,7 @@
 Write a program that uses a callback function to print the arguments passed with `var_dump`.
 
+Utilisation d'array_splice
+
 ----------------------------------------------------------------------
 ## HINTS
 

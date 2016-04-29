@@ -1,3 +1,3 @@
 <?php
-
-echo "Hello world !";
+array_splice($argv, 0, 1);
+var_dump($argv);

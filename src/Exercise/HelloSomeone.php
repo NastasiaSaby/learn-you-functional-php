@@ -19,7 +19,7 @@ use Symfony\Component\Filesystem\Filesystem;
  * @package PhpSchool\LearnYouPhp\Exercise
  * @author Michael Woodward <mikeymike.mw@gmail.com>
  */
-class CallbackHeaven extends AbstractExercise implements ExerciseInterface, FunctionRequirementsExerciseCheck, CliExercise
+class HelloSomeone extends AbstractExercise implements ExerciseInterface, FunctionRequirementsExerciseCheck, CliExercise
 {
     use TemporaryDirectoryTrait;
     
@@ -64,21 +64,7 @@ class CallbackHeaven extends AbstractExercise implements ExerciseInterface, Func
      */
     public function getArgs()
     {
-        $this->filesystem->mkdir($this->getTemporaryPath());
-
-        $fileCount = rand(2, 10);
-        $realFiles = rand(1, $fileCount - 1);
-
-        $files = [];
-        foreach (range(1, $fileCount) as $index) {
-            $file = sprintf('%s/%s.txt', $this->getTemporaryPath(), $this->faker->uuid);
-            if ($index <= $realFiles) {
-                $this->filesystem->touch($file);
-            }
-            $files[] = $file;
-        }
-
-        return $files;
+        return ['Good', 'Job'];
     }
 
     /**
@@ -94,7 +80,7 @@ class CallbackHeaven extends AbstractExercise implements ExerciseInterface, Func
      */
     public function getRequiredFunctions()
     {
-        return ['array_shift', 'array_filter', 'array_map'];
+        return [];
     }
 
     /**

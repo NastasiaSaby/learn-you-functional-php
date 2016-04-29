@@ -15,7 +15,7 @@ use PhpSchool\LearnYouPhp\Exercise\HttpJsonApi;
 use PhpSchool\LearnYouPhp\Exercise\MyFirstIo;
 use PhpSchool\LearnYouPhp\Exercise\TimeServer;
 use PhpSchool\LearnYouPhp\Exercise\DependencyHeaven;
-use PhpSchool\LearnYouPhp\Exercise\CallbackHeaven;
+use PhpSchool\LearnYouPhp\Exercise\HelloSomeone;
 use PhpSchool\LearnYouPhp\TcpSocketFactory;
 use Symfony\Component\Filesystem\Filesystem;
 use Faker\Factory as FakerFactory;
@@ -53,7 +53,7 @@ return [
     DependencyHeaven::class  => factory(function (ContainerInterface $c) {
         return new DependencyHeaven(FakerFactory::create('fr_FR'));
     }),
-    CallbackHeaven::class  => factory(function (ContainerInterface $c) {
-        return new CallbackHeaven($c->get(Filesystem::class), FakerFactory::create());
+    HelloSomeone::class  => factory(function (ContainerInterface $c) {
+        return new HelloSomeone($c->get(Filesystem::class), FakerFactory::create());
     }),
 ];
