@@ -3,6 +3,8 @@ Write a program that prints the text "Hello World" to the console with a callabl
 ----------------------------------------------------------------------
 ## HINTS
 
+You can use "echo" to print a text.
+
 A callable function in PHP can be used as that :
 
 ```php
