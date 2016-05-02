@@ -34,21 +34,11 @@ class HelloSomeone extends AbstractExercise implements ExerciseInterface, Functi
     private $faker;
 
     /**
-     * @param Filesystem $filesystem
-     * @param Generator $faker
-     */
-    public function __construct(Filesystem $filesystem, Generator $faker)
-    {
-        $this->filesystem   = $filesystem;
-        $this->faker        = $faker;
-    }
-
-    /**
      * @return string
      */
     public function getName()
     {
-        return 'Callback Heaven!';
+        return 'Hello someone!';
     }
 
     /**
@@ -56,7 +46,7 @@ class HelloSomeone extends AbstractExercise implements ExerciseInterface, Functi
      */
     public function getDescription()
     {
-        return 'Filter an array of file paths and map to SplFile objects';
+        return 'Hello world exercice with name';
     }
 
     /**
@@ -64,15 +54,7 @@ class HelloSomeone extends AbstractExercise implements ExerciseInterface, Functi
      */
     public function getArgs()
     {
-        return ['Good', 'Job'];
-    }
-
-    /**
-     * @return null
-     */
-    public function tearDown()
-    {
-        $this->filesystem->remove($this->getTemporaryPath());
+        return ['Sarra'];
     }
 
     /**

@@ -1,8 +1,7 @@
 <?php
 
 $var = function() use($argv) {
-    array_splice($argv, 0, 1);
-    var_dump($argv);
+    echo "Hello ".$argv[1];
 };
 
 $var();
