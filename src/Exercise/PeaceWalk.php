@@ -2,26 +2,31 @@
 
 namespace PhpSchool\LearnYouPhp\Exercise;
 
+use Faker\Generator;
+use PhpSchool\PhpWorkshop\Check\FunctionRequirementsCheck;
 use PhpSchool\PhpWorkshop\Exercise\AbstractExercise;
 use PhpSchool\PhpWorkshop\Exercise\CliExercise;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseInterface;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
+use PhpSchool\PhpWorkshop\Exercise\TemporaryDirectoryTrait;
+use PhpSchool\PhpWorkshop\ExerciseCheck\FunctionRequirementsExerciseCheck;
 use PhpSchool\PhpWorkshop\ExerciseCheck\StdOutExerciseCheck;
 use PhpSchool\PhpWorkshop\ExerciseDispatcher;
+use Symfony\Component\Filesystem\Filesystem;
 
 /**
- * Class HelloWorld
+ * Class ArrayWeGo
  * @package PhpSchool\LearnYouPhp\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
+ * @author Michael Woodward <mikeymike.mw@gmail.com>
  */
-class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExercise
+class PeaceWalk extends AbstractExercise implements ExerciseInterface, CliExercise
 {
     /**
      * @return string
      */
     public function getName()
     {
-        return 'Hello World';
+        return 'Peace walk';
     }
 
     /**
@@ -29,7 +34,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getDescription()
     {
-        return 'Simple Hello World exercise';
+        return 'Exercice with array_walk';
     }
 
     /**
@@ -37,7 +42,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getArgs()
     {
-        return [];
+        return ['Sarra', 'Helen', 'Anas'];
     }
 
     /**
