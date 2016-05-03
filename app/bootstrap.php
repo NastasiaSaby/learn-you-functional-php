@@ -40,6 +40,7 @@ $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\HelloSomeone::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\PeaceWalk::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\ArrayWeMap::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\ArrayWeReduce::class);
+$app->addExercise(\PhpSchool\LearnYouPhp\Exercise\ArrayWeFilter::class);
 
 $art = <<<ART
 

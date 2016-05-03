@@ -1,0 +1,31 @@
+<?php
+
+
+namespace PhpSchool\LearnYouPhpTest\Exercise;
+
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeFilter;
+use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
+use PhpSchool\PhpWorkshop\Solution\SolutionInterface;
+use PHPUnit_Framework_TestCase;
+
+/**
+ * Class ArrayWeMapTest
+ * @package PhpSchool\LearnYouPhpTest\Exercise
+ * @author Aydin Hassan <aydin@hotmail.co.uk>
+ */
+class ArrayWeFilterTest extends PHPUnit_Framework_TestCase
+{
+    public function testArrayWeMapExercise()
+    {
+        $e = new ArrayWeFilter();
+        $this->assertEquals('Array we filter!', $e->getName());
+        $this->assertEquals('Exercice with array filter', $e->getDescription());
+        $this->assertEquals(ExerciseType::CLI, $e->getType());
+
+        $this->assertEquals([1, 2, 3, 4, 5], $e->getArgs());
+
+        $this->assertInstanceOf(SolutionInterface::class, $e->getSolution());
+        $this->assertFileExists(realpath($e->getProblem()));
+        $this->assertNull($e->tearDown());
+    }
+}

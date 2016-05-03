@@ -19,6 +19,7 @@ use PhpSchool\LearnYouPhp\Exercise\HelloSomeone;
 use PhpSchool\LearnYouPhp\Exercise\PeaceWalk;
 use PhpSchool\LearnYouPhp\Exercise\ArrayWeMap;
 use PhpSchool\LearnYouPhp\Exercise\ArrayWeReduce;
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeFilter;
 use PhpSchool\LearnYouPhp\TcpSocketFactory;
 use Symfony\Component\Filesystem\Filesystem;
 use Faker\Factory as FakerFactory;
@@ -67,5 +68,8 @@ return [
     }),
     ArrayWeReduce::class  => factory(function (ContainerInterface $c) {
         return new ArrayWeReduce($c->get(Filesystem::class), FakerFactory::create());
+    }),
+    ArrayWeFilter::class  => factory(function (ContainerInterface $c) {
+        return new ArrayWeFilter($c->get(Filesystem::class), FakerFactory::create());
     }),
 ];
