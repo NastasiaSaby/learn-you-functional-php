@@ -9,9 +9,8 @@ use PhpSchool\PhpWorkshop\Solution\SolutionInterface;
 use PHPUnit_Framework_TestCase;
 
 /**
- * Class HelloWorldTest
+ * Class HelloSomeoneTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
 class HelloSomeoneTest extends PHPUnit_Framework_TestCase
 {

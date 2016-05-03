@@ -11,7 +11,6 @@ use PHPUnit_Framework_TestCase;
 /**
  * Class PeaceWalkTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
 class PeaceWalkTest extends PHPUnit_Framework_TestCase
 {

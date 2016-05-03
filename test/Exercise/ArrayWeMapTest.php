@@ -11,7 +11,6 @@ use PHPUnit_Framework_TestCase;
 /**
  * Class ArrayWeMapTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
 class ArrayWeMapTest extends PHPUnit_Framework_TestCase
 {

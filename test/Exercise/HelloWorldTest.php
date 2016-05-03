@@ -11,7 +11,6 @@ use PhpSchool\LearnYouPhp\Exercise\HelloWorld;
 /**
  * Class HelloWorldTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
 class HelloWorldTest extends PHPUnit_Framework_TestCase
 {

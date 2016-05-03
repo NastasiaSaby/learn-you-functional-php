@@ -9,9 +9,8 @@ use PhpSchool\PhpWorkshop\Solution\SolutionInterface;
 use PHPUnit_Framework_TestCase;
 
 /**
- * Class ArrayWeMapTest
+ * Class ArrayWeFilterTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
- * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
 class ArrayWeFilterTest extends PHPUnit_Framework_TestCase
 {
