@@ -7,4 +7,3 @@ array_splice($argv, 0, 1);
 $result = array_map($function, $argv);
 
 var_dump($result);
-
