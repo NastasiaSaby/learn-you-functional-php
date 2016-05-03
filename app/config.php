@@ -18,6 +18,7 @@ use PhpSchool\LearnYouPhp\Exercise\DependencyHeaven;
 use PhpSchool\LearnYouPhp\Exercise\HelloSomeone;
 use PhpSchool\LearnYouPhp\Exercise\PeaceWalk;
 use PhpSchool\LearnYouPhp\Exercise\ArrayWeMap;
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeReduce;
 use PhpSchool\LearnYouPhp\TcpSocketFactory;
 use Symfony\Component\Filesystem\Filesystem;
 use Faker\Factory as FakerFactory;
@@ -63,5 +64,8 @@ return [
     }),
     ArrayWeMap::class  => factory(function (ContainerInterface $c) {
         return new ArrayWeMap($c->get(Filesystem::class), FakerFactory::create());
+    }),
+    ArrayWeReduce::class  => factory(function (ContainerInterface $c) {
+        return new ArrayWeReduce($c->get(Filesystem::class), FakerFactory::create());
     }),
 ];

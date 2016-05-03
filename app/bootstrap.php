@@ -39,6 +39,7 @@ $app->addExercise(HelloWorld::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\HelloSomeone::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\PeaceWalk::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\ArrayWeMap::class);
+$app->addExercise(\PhpSchool\LearnYouPhp\Exercise\ArrayWeReduce::class);
 
 $art = <<<ART
 
