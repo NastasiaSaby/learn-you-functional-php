@@ -40,13 +40,15 @@ $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\HelloSomeone::class);
 $app->addExercise(\PhpSchool\LearnYouPhp\Exercise\PeaceWalk::class);
 
 $art = <<<ART
-        _ __ _
-       / |..| \
-       \/ || \/
-        |_''_|
+
+        _\/__
+       | - - |
+       |__+__|
+      \_______/
+       |_| |_|
 
       PHP SCHOOL
-LEARNING FOR ELEPHANTS
+FUNCTIONAL PROGRAMMING
   FUNCTIONS AND ARRAY
 ART;
 
