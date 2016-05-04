@@ -19,7 +19,7 @@ $var = function() use ($argument){
 $var();
 ```
 
-Documentation on the `SplFileObject` class can be found by pointing your browser here:
-  [http://php.net/manual/en/class.splfileobject.php]()
+Documentation on the `array_walk function` can be found by pointing your browser here:
+  [http://php.net/manual/en/function.array-walk.php]()
 
 ----------------------------------------------------------------------

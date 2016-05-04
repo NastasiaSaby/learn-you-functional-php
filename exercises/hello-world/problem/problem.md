@@ -15,4 +15,7 @@ $var = function() {
 $var();
 ```
 
+Documentation on the `Callable function` can be found by pointing your browser here:
+  [http://php.net/manual/en/language.types.callable.php]()
+
 ----------------------------------------------------------------------
