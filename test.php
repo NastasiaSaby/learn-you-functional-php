@@ -1,9 +1,11 @@
 <?php
+$arguments = $argv;
 $function = function($name) {
- return $name%2==0;
+ echo "Hello ".$name."\n";
 };
 
-array_shift($argv);
-$result = array_filter($argv, $function);
+array_shift($arguments);
 
-print_r($result);
+foreach ($arguments as $argument) {
+ echo "Hello ".$argument."\n";
+}

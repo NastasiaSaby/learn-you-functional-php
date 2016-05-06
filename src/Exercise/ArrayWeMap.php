@@ -2,17 +2,20 @@
 
 namespace PhpSchool\LearnYouPhp\Exercise;
 
+use PhpSchool\PhpWorkshop\Check\FunctionRequirementsCheck;
 use PhpSchool\PhpWorkshop\Exercise\AbstractExercise;
 use PhpSchool\PhpWorkshop\Exercise\CliExercise;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseInterface;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
+use PhpSchool\PhpWorkshop\ExerciseCheck\FunctionRequirementsExerciseCheck;
 use PhpSchool\PhpWorkshop\ExerciseCheck\StdOutExerciseCheck;
+use PhpSchool\PhpWorkshop\ExerciseDispatcher;
 
 /**
  * Class ArrayWeMap
  * @package PhpSchool\LearnYouPhp\Exercise
  */
-class ArrayWeMap extends AbstractExercise implements ExerciseInterface, CliExercise
+class ArrayWeMap extends AbstractExercise implements ExerciseInterface, CliExercise, FunctionRequirementsExerciseCheck
 {
     /**
      * @return string
@@ -44,5 +47,29 @@ class ArrayWeMap extends AbstractExercise implements ExerciseInterface, CliExerc
     public function getType()
     {
         return ExerciseType::CLI();
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getRequiredFunctions()
+    {
+        return ['array_map'];
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getBannedFunctions()
+    {
+        return [];
+    }
+
+    /**
+     * @param ExerciseDispatcher $dispatcher
+     */
+    public function configure(ExerciseDispatcher $dispatcher)
+    {
+        $dispatcher->requireCheck(FunctionRequirementsCheck::class, $dispatcher::CHECK_AFTER);
     }
 }
