@@ -1,25 +1,21 @@
-Write a program that prints the text "Hello someone" to the console with a callable function where someone is the name given as the first argument.
+Write a program that transform the arguments given by surrounding them by `-` and print the array.
 
 ----------------------------------------------------------------------
 ## HINTS
+You can use `var_dump` to print an array.
 
-You can get the arguments using the $argv array.
-
-Note that the first argument is always the name of the executed script.
-
-A callable function in PHP with arguments can be used as that :
+To transform an array to another array where you execute an algorithm on each element, you can use `array_map` as following :
 
 ```php
-$argument = "Foo";
-
-$var = function() use ($argument){
-   echo "Argument is ".$argument;
+$function = function($argument) {
+    return $argument.'.suffix';
 };
 
-$var();
+$arguments = ['argument1', 'argument2'];
+$result = array_map($function, $arguments);
 ```
 
-Documentation on the `SplFileObject` class can be found by pointing your browser here:
-  [http://php.net/manual/en/class.splfileobject.php]()
+Documentation on the `array_map function` can be found by pointing your browser here:
+  [http://php.net/manual/en/function.array-map.php]()
 
 ----------------------------------------------------------------------

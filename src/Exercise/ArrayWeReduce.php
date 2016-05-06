@@ -35,7 +35,7 @@ class ArrayWeReduce extends AbstractExercise implements ExerciseInterface, CliEx
      */
     public function getArgs()
     {
-        return ['Sarra', 'Helen', 'Anas'];
+        return [1, 2, 3];
     }
 
     /**

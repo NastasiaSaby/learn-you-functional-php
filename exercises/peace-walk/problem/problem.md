@@ -1,25 +1,26 @@
-Write a program that prints the text "Hello someone" to the console with a callable function where someone is the name given as the first argument.
+Write a program that prints the text "Hello someone" to the console with a callable function for each name given as argument.
 
 ----------------------------------------------------------------------
 ## HINTS
-
-You can get the arguments using the $argv array.
-
-Note that the first argument is always the name of the executed script.
-
-A callable function in PHP with arguments can be used as that :
-
+To remove the first argument, you can use `array_splice` as following :
 ```php
-$argument = "Foo";
+array_splice($argv, 0, 1);
+```
 
-$var = function() use ($argument){
-   echo "Argument is ".$argument;
+To execute a function (callable) for each element of an array, you can use array_walk as following :
+```php
+$function = function($argument) {
+    echo "Argument is".$name;
 };
 
-$var();
+$arguments = ["argument1", "argument2"];
+array_walk($arguments, $function);
 ```
 
 Documentation on the `array_walk function` can be found by pointing your browser here:
   [http://php.net/manual/en/function.array-walk.php]()
+
+Documentation on the `array_splice function` can be found by pointing your browser here:
+  [http://php.net/manual/en/function.array-splice.php]()
 
 ----------------------------------------------------------------------

@@ -1,25 +1,19 @@
-Write a program that prints the text "Hello someone" to the console with a callable function where someone is the name given as the first argument.
+Write a program that give the sum of the arguments given and print the result.
 
 ----------------------------------------------------------------------
 ## HINTS
-
-You can get the arguments using the $argv array.
-
-Note that the first argument is always the name of the executed script.
-
-A callable function in PHP with arguments can be used as that :
+To reduce the elements of an array to one result to multiply them for instance, you can use `array_reduce` as following :
 
 ```php
-$argument = "Foo";
-
-$var = function() use ($argument){
-   echo "Argument is ".$argument;
+$function = function($output, $argument) {
+    return $output*$argument;
 };
 
-$var();
+$arguments = [1, 2, 3];
+$result = array_reduce($arguments, $function);
 ```
 
-Documentation on the `SplFileObject` class can be found by pointing your browser here:
-  [http://php.net/manual/en/class.splfileobject.php]()
+Documentation on the `array_reduce function` can be found by pointing your browser here:
+  [http://php.net/manual/en/function.array-reduce.php]()
 
 ----------------------------------------------------------------------

@@ -21,7 +21,7 @@ class ArrayWeReduceTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('Exercice with array reduce', $e->getDescription());
         $this->assertEquals(ExerciseType::CLI, $e->getType());
 
-        $this->assertEquals(['Sarra', 'Helen', 'Anas'], $e->getArgs());
+        $this->assertEquals([1, 2, 3], $e->getArgs());
 
         $this->assertInstanceOf(SolutionInterface::class, $e->getSolution());
         $this->assertFileExists(realpath($e->getProblem()));
