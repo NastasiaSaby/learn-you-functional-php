@@ -1,25 +1,28 @@
-Write a program that prints the text "Hello someone" to the console with a callable function where someone is the name given as the first argument.
+Write a program that sort only the even numbers from the arguments.
+You must write this program with the array_filter function.
 
 ----------------------------------------------------------------------
 ## HINTS
 
-You can get the arguments using the $argv array.
-
-Note that the first argument is always the name of the executed script.
-
-A callable function in PHP with arguments can be used as that :
-
+You can know if a number is even by divide it by 2 as following :
 ```php
-$argument = "Foo";
-
-$var = function() use ($argument){
-   echo "Argument is ".$argument;
-};
-
-$var();
+if ($number %2 == 0) {
+    echo $number."is an even number".
+}
 ```
 
-Documentation on the `SplFileObject` class can be found by pointing your browser here:
-  [http://php.net/manual/en/class.splfileobject.php]()
+To filter elements from an array, use array_filter.
+For instance to filter multiple of 3 numbers :
+```php
+$function = function($number) {
+    return $number %3 == 0;
+};
+
+$numbers = [1, 2, 3, 4, 5, 6];
+array_filter($numbers, $function);
+```
+
+Documentation on the `array_filter` can be found by pointing your browser here:
+  [http://php.net/manual/en/function.array-filter.php]()
 
 ----------------------------------------------------------------------

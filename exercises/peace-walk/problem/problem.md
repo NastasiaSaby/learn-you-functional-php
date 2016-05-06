@@ -1,4 +1,5 @@
 Write a program that prints the text "Hello someone" to the console with a callable function for each name given as argument.
+You must write this program with the array_walk function.
 
 ----------------------------------------------------------------------
 ## HINTS
@@ -7,7 +8,7 @@ To remove the first argument, you can use `array_splice` as following :
 array_splice($argv, 0, 1);
 ```
 
-To execute a function (callable) for each element of an array, you can use array_walk as following :
+To execute a function (callable) for each element of an array, use array_walk as following :
 ```php
 $function = function($argument) {
     echo "Argument is".$name;
