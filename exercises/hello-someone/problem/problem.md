@@ -5,7 +5,8 @@ Write a program that prints the text "Hello *someone*" to the console with a cal
 
 You can get the arguments using the $argv array.
 
-Note that the first argument is always the name of the executed script.
+Note that the first element of $argv is always the name of the executed script.
+To get the first argument given to the executed script, you must use $argv[1];
 
 A callable function in PHP with arguments can be used as that :
 

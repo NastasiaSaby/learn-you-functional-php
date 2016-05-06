@@ -3,7 +3,7 @@ $function = function($number) {
     return $number %2 == 0;
 };
 
-array_splice($argv, 0, 1);
+array_shift($argv);
 $result = array_filter($argv, $function);
 
-var_dump($result);
+print_r($result);

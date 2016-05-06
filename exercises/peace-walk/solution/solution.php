@@ -1,8 +1,8 @@
 <?php
-
+$arguments = $argv;
 $function = function($name) {
     echo "Hello ".$name."\n";
 };
 
-array_splice($argv, 0, 1);
-array_walk($argv, $function);
+array_shift($arguments);
+array_walk($arguments, $function);

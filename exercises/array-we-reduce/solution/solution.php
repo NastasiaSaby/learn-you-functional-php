@@ -3,7 +3,7 @@ $function = function($output, $name) {
     return $output+$name;
 };
 
-array_splice($argv, 0, 1);
+array_shift($argv);
 $result = array_reduce($argv, $function);
 
 echo $result;

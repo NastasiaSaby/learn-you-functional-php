@@ -1,7 +1,7 @@
 <?php
 
 $var = function() {
-    echo "Hello world !";
+    echo "Hello world";
 };
 
 $var();

@@ -3,7 +3,7 @@ $function = function($name) {
     return '-'.$name.'-';
 };
 
-array_splice($argv, 0, 1);
+array_shift($argv);
 $result = array_map($function, $argv);
 
-var_dump($result);
+print_r($result);

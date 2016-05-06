@@ -1,11 +1,11 @@
-Write a program that transform the arguments given by surrounding them by "-" and print the array.
+Write a program that transforms the arguments given by surrounding them by "-" and print the array.
 For instance, for the argument "argument", you will get "-argument-".
 
 You must write this program with the array_map function.
 
 ----------------------------------------------------------------------
 ## HINTS
-You can use `var_dump` to print an array.
+You can use `print_r` to print an array.
 
 To transform each element of the array, use `array_map` as following :
 
