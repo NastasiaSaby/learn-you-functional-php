@@ -1,4 +1,4 @@
-Write a program that prints the text "Hello someone" to the console with a callable function for each name given as argument.
+Write a program that prints the text "Hello *someone*" to the console with a callable function for each name given as argument.
 You must write this program with the array_walk function.
 
 ----------------------------------------------------------------------

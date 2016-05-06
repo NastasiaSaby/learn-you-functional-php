@@ -1,4 +1,4 @@
-Write a program that prints the text "Hello someone" to the console with a callable function where someone is the name given as the first argument.
+Write a program that prints the text "Hello *someone*" to the console with a callable function where someone is the name given as the first argument to the executed script.
 
 ----------------------------------------------------------------------
 ## HINTS

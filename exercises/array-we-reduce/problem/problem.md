@@ -1,9 +1,9 @@
-Write a program that give the sum of the arguments given and print the result.
+Write a program that gives the sum of the arguments given and print the result.
 You must write this program with the array_reduce function.
 
 ----------------------------------------------------------------------
 ## HINTS
-To reduce the elements of an array to one result to multiply them for instance, use `array_reduce` as following :
+To reduce the elements of an array to one result, use `array_reduce` as following :
 
 ```php
 $function = function($output, $argument) {

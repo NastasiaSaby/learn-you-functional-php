@@ -4,7 +4,7 @@ You must write this program with the array_filter function.
 ----------------------------------------------------------------------
 ## HINTS
 
-You can know if a number is even by divide it by 2 as following :
+You can know if a number is an even number by divide it by 2 as following :
 ```php
 if ($number %2 == 0) {
     echo $number."is an even number".

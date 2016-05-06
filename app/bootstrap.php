@@ -39,15 +39,15 @@ $app->addExercise(ArrayWeFilter::class);
 
 $art = <<<ART
 
-        _\/__
-       | - - |
-       |__+__|
-      \_______/
-       |_| |_|
+            _\/__
+           | - - |
+           |__+__|
+          \_______/
+           |_| |_|
 
-      PHP SCHOOL
-FUNCTIONAL PROGRAMMING
-  FUNCTIONS AND ARRAY
+         PHP SCHOOL
+   FUNCTIONAL PROGRAMMING
+CALLABLE FUNCTIONS AND ARRAY
 ART;
 
 $app->setLogo($art);
