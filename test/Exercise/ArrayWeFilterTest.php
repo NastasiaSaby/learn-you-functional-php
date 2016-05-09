@@ -27,4 +27,10 @@ class ArrayWeFilterTest extends PHPUnit_Framework_TestCase
         $this->assertFileExists(realpath($e->getProblem()));
         $this->assertNull($e->tearDown());
     }
+
+    public function testFunctionRequirements()
+    {
+        $e = new ArrayWeFilter();
+        $this->assertEquals(['array_filter'], $e->getRequiredFunctions());
+    }
 }

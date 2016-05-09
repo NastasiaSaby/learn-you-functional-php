@@ -27,4 +27,10 @@ class ArrayWeMapTest extends PHPUnit_Framework_TestCase
         $this->assertFileExists(realpath($e->getProblem()));
         $this->assertNull($e->tearDown());
     }
+
+    public function testFunctionRequirements()
+    {
+        $e = new ArrayWeMap();
+        $this->assertEquals(['array_map'], $e->getRequiredFunctions());
+    }
 }

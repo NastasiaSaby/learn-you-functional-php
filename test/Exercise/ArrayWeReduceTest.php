@@ -27,4 +27,10 @@ class ArrayWeReduceTest extends PHPUnit_Framework_TestCase
         $this->assertFileExists(realpath($e->getProblem()));
         $this->assertNull($e->tearDown());
     }
+
+    public function testFunctionRequirements()
+    {
+        $e = new ArrayWeReduce();
+        $this->assertEquals(['array_reduce'], $e->getRequiredFunctions());
+    }
 }
