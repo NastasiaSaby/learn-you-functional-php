@@ -20,45 +20,38 @@ switch (true) {
         throw new RuntimeException('Unable to locate Composer autoloader; please run "composer install".');
 }
 
-use PhpSchool\LearnYouPhp\Exercise\ConcernedAboutSeparation;
-use PhpSchool\LearnYouPhp\Exercise\TimeServer;
-use PhpSchool\LearnYouPhp\Exercise\DatabaseRead;
-use PhpSchool\LearnYouPhp\Exercise\ExceptionalCoding;
 use PhpSchool\PhpWorkshop\Application;
-use PhpSchool\LearnYouPhp\Exercise\BabySteps;
-use PhpSchool\LearnYouPhp\Exercise\FilteredLs;
 use PhpSchool\LearnYouPhp\Exercise\HelloWorld;
-use PhpSchool\LearnYouPhp\Exercise\MyFirstIo;
-use PhpSchool\LearnYouPhp\Exercise\ArrayWeGo;
-use PhpSchool\LearnYouPhp\Exercise\HttpJsonApi;
-use PhpSchool\LearnYouPhp\Exercise\DependencyHeaven;
+use PhpSchool\LearnYouPhp\Exercise\HelloSomeone;
+use PhpSchool\LearnYouPhp\Exercise\PeaceWalk;
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeMap;
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeReduce;
+use PhpSchool\LearnYouPhp\Exercise\ArrayWeFilter;
 
 $app = new Application(null, __DIR__ . '/config.php');
 
 $app->addExercise(HelloWorld::class);
-$app->addExercise(BabySteps::class);
-$app->addExercise(MyFirstIo::class);
-$app->addExercise(FilteredLs::class);
-$app->addExercise(ConcernedAboutSeparation::class);
-$app->addExercise(ArrayWeGo::class);
-$app->addExercise(ExceptionalCoding::class);
-$app->addExercise(DatabaseRead::class);
-$app->addExercise(TimeServer::class);
-$app->addExercise(HttpJsonApi::class);
-$app->addExercise(DependencyHeaven::class);
+$app->addExercise(HelloSomeone::class);
+$app->addExercise(PeaceWalk::class);
+$app->addExercise(ArrayWeMap::class);
+$app->addExercise(ArrayWeReduce::class);
+$app->addExercise(ArrayWeFilter::class);
 
 $art = <<<ART
-        _ __ _
-       / |..| \
-       \/ || \/
-        |_''_|
 
-      PHP SCHOOL
-LEARNING FOR ELEPHANTS
+            _\/__
+           | - - |
+           |__+__|
+          \_______/
+           |_| |_|
+
+         PHP SCHOOL
+   FUNCTIONAL PROGRAMMING
+CALLABLE FUNCTIONS AND ARRAY
 ART;
 
 $app->setLogo($art);
-$app->setFgColour('magenta');
+$app->setFgColour('blue');
 $app->setBgColour('black');
 
 return $app;

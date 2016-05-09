@@ -9,17 +9,17 @@ use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
 use PhpSchool\PhpWorkshop\ExerciseCheck\StdOutExerciseCheck;
 
 /**
- * Class HelloWorld
+ * Class HelloSomeone
  * @package PhpSchool\LearnYouPhp\Exercise
  */
-class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExercise
+class HelloSomeone extends AbstractExercise implements ExerciseInterface, CliExercise
 {
     /**
      * @return string
      */
     public function getName()
     {
-        return 'Hello World';
+        return 'Hello someone!';
     }
 
     /**
@@ -27,7 +27,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getDescription()
     {
-        return 'Simple Hello World exercise';
+        return 'Hello world exercice with name';
     }
 
     /**
@@ -35,7 +35,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getArgs()
     {
-        return [];
+        return ['Sarra'];
     }
 
     /**

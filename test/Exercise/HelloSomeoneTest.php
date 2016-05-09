@@ -3,25 +3,25 @@
 
 namespace PhpSchool\LearnYouPhpTest\Exercise;
 
+use PhpSchool\LearnYouPhp\Exercise\HelloSomeone;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
 use PhpSchool\PhpWorkshop\Solution\SolutionInterface;
 use PHPUnit_Framework_TestCase;
-use PhpSchool\LearnYouPhp\Exercise\HelloWorld;
 
 /**
- * Class HelloWorldTest
+ * Class HelloSomeoneTest
  * @package PhpSchool\LearnYouPhpTest\Exercise
  */
-class HelloWorldTest extends PHPUnit_Framework_TestCase
+class HelloSomeoneTest extends PHPUnit_Framework_TestCase
 {
     public function testHelloWorldExercise()
     {
-        $e = new HelloWorld;
-        $this->assertEquals('Hello World', $e->getName());
-        $this->assertEquals('Simple Hello World exercise', $e->getDescription());
+        $e = new HelloSomeone();
+        $this->assertEquals('Hello someone!', $e->getName());
+        $this->assertEquals('Hello world exercice with name', $e->getDescription());
         $this->assertEquals(ExerciseType::CLI, $e->getType());
 
-        $this->assertEquals([], $e->getArgs());
+        $this->assertEquals(['Sarra'], $e->getArgs());
 
         $this->assertInstanceOf(SolutionInterface::class, $e->getSolution());
         $this->assertFileExists(realpath($e->getProblem()));

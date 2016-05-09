@@ -1,28 +1,26 @@
-Write a program that prints the text "Hello World" to the console (stdout).
+To be brief, functional programming is about functions.
+With PHP, we can do functional programming for instance with callable functions and arrays.
+
+Let's go !
+
+Write a program that prints the text "Hello World" to the console with a callable function.
 
 ----------------------------------------------------------------------
 ## HINTS
 
-To make a PHP program, create a new file with a `.php` extension and start writing PHP! Execute your program by running it with the
-`php` command. e.g.:
+You can use "echo" to print a text.
 
-```sh
-$ php program.php
-```
-
-You can write to the console like so:
+A callable function in PHP can be used as that :
 
 ```php
-<?php
-echo "text";
+$var = function() {
+   echo "First test !";
+};
+
+$var();
 ```
 
-When you are done, you must run:
-
-```sh
-$ {appname} verify program.php
-```
-
-to proceed. Your program will be tested, a report will be generated, and the lesson will be marked 'completed' if you are successful.
+Documentation on the `Callable function` can be found by pointing your browser here:
+  [http://php.net/manual/en/language.types.callable.php]()
 
 ----------------------------------------------------------------------

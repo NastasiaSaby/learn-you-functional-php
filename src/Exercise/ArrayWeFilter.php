@@ -2,24 +2,27 @@
 
 namespace PhpSchool\LearnYouPhp\Exercise;
 
+use PhpSchool\PhpWorkshop\Check\FunctionRequirementsCheck;
 use PhpSchool\PhpWorkshop\Exercise\AbstractExercise;
 use PhpSchool\PhpWorkshop\Exercise\CliExercise;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseInterface;
 use PhpSchool\PhpWorkshop\Exercise\ExerciseType;
+use PhpSchool\PhpWorkshop\ExerciseCheck\FunctionRequirementsExerciseCheck;
 use PhpSchool\PhpWorkshop\ExerciseCheck\StdOutExerciseCheck;
+use PhpSchool\PhpWorkshop\ExerciseDispatcher;
 
 /**
- * Class HelloWorld
+ * Class ArrayWeFilter
  * @package PhpSchool\LearnYouPhp\Exercise
  */
-class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExercise
+class ArrayWeFilter extends AbstractExercise implements ExerciseInterface, CliExercise, FunctionRequirementsExerciseCheck
 {
     /**
      * @return string
      */
     public function getName()
     {
-        return 'Hello World';
+        return 'Array we filter!';
     }
 
     /**
@@ -27,7 +30,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getDescription()
     {
-        return 'Simple Hello World exercise';
+        return 'Exercice with array filter';
     }
 
     /**
@@ -35,7 +38,7 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
      */
     public function getArgs()
     {
-        return [];
+        return [1, 2, 3, 4, 5];
     }
 
     /**
@@ -44,5 +47,21 @@ class HelloWorld extends AbstractExercise implements ExerciseInterface, CliExerc
     public function getType()
     {
         return ExerciseType::CLI();
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getRequiredFunctions()
+    {
+        return ['array_filter'];
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getBannedFunctions()
+    {
+        return [];
     }
 }
